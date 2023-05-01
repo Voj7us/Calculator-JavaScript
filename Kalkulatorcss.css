@@ -1,0 +1,237 @@
+* {
+    background-color: #778B9E;
+   
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: auto;
+    padding: auto;
+
+    transition-duration: 0.5s;
+    transition-property: initial;
+    transition-timing-function: ease-in-out;
+
+    box-sizing: border-box;
+}
+header {
+    text-align: center;
+    margin-top: 1%;
+}
+header img {
+    width:  10% ;
+   
+animation: opacityTimeImg 3s infinite alternate;
+}
+@keyframes opacityTimeImg {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+hr{
+    margin: 1%;
+}
+
+
+#calculator{
+    width: 35vh;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 16px 12px 13px 3px rgba(66, 68, 90, 1);
+   
+}
+.buttons{
+    background-color: #fff;
+}
+#calculator button{
+    width: 3rem;
+    height: 3rem;
+    margin: 1vh;
+    background-color: #9e896760;
+    color:#F2F9FF;
+    border: none;
+    color: black;
+    box-shadow: 1px 2px 2px 2px rgba(66, 68, 90, 1);
+}
+.display{
+    background-color: #778B9E;
+    padding: 10px;
+    height: 6rem;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.display p {
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: right;
+  }
+
+#calculator .previousNumber{
+    font-size: 14px;
+    color: black;
+    text-align: right;
+}
+#calculator .previousNumber p {
+       background-color: #778B9E;
+       display: inline-block;
+       color: black;
+}
+#calculator .previousNumber .sign {
+    background-color: #778B9E;
+    display: inline-block;
+    margin-left: 10px;
+    color: black;
+}
+#calculator .courrentNumber{
+    font-size: 36px;
+    text-align: right;
+    background-color: #778B9E;
+    color: black;
+}
+button.operator[disabled] {
+    cursor: not-allowed;
+  }
+
+  
+#calculator #zero{
+    width: 7.8rem;
+}
+footer {
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+button:active{
+    
+    animation: kolor 0.1s normal;
+}
+
+@keyframes kolor {
+    from {background-color: #F2F9FF;}
+    to {background-color: rgba(129, 85, 85, 0.397);}
+  }
+
+
+@media only screen and (max-width: 768px) {
+    /* zmiany dla ekranów o szerokości <= 768px */
+  
+#calculator{
+   max-width: 100vh;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 16px 12px 13px 3px rgba(66, 68, 90, 1);
+   
+}
+.buttons{
+    background-color: #fff;
+}
+#calculator button{
+    width: 25px;
+    height:25px;
+    margin: 1vh;
+    background-color: #9e896760;
+    color:#F2F9FF;
+    border: none;
+    color: black;
+    box-shadow: 1px 2px 2px 2px rgba(66, 68, 90, 1);
+}
+.display{
+    background-color: #778B9E;
+    padding: 10px;
+    height: 6rem;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.display p {
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: right;
+  }
+
+#calculator .previousNumber{
+    font-size: 14px;
+    color: black;
+    text-align: right;
+}
+#calculator .previousNumber p {
+       background-color: #778B9E;
+       display: inline-block;
+       color: black;
+}
+#calculator .previousNumber .sign {
+    background-color: #778B9E;
+    display: inline-block;
+    margin-left: 10px;
+    color: black;
+}
+#calculator .courrentNumber{
+    font-size: 36px;
+    text-align: right;
+    background-color: #778B9E;
+    color: black;
+}
+.operator[disabled] {
+    cursor: not-allowed;
+    background-color: aqua;
+  }
+
+  
+#calculator #zero{
+    width: 70px;
+}
+footer {
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+
+  
+  }  
+    @media only screen and (min-width: 768px) and (max-width: 1200px) {
+        /* zmiany dla ekranów o szerokości <= 768px */
+        
+
+        #calculator{
+            width: 50vh;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 16px 12px 13px 3px rgba(66, 68, 90, 1);
+           
+        }
+        .buttons{
+            background-color: #fff;
+        }
+        #calculator button{
+            width: 8vh;
+            height: 8vh;
+            margin: 1vh;
+            background-color: #9e896760;
+            color:#F2F9FF;
+            border: none;
+            color: black;
+            box-shadow: 1px 2px 2px 2px rgba(66, 68, 90, 1);
+        }
+        
+        #calculator #zero{
+            width: 9.4rem;
+        }
+        footer {
+            height: 10%;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+        
+  
+}   
+  
